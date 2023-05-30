@@ -15,6 +15,8 @@ import store from './store/Store';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
 import { Provider } from 'react-redux';
+import DeletarPostagem from './components/postagens/deletarPostagem/DeletarPostagem';
+import DeletarTema from './components/temas/deletarTema/DeletarTema';
 
 
 function App() {
@@ -36,6 +38,8 @@ function App() {
           <Route path="/formularioTema/:id" element={<CadastroTema />} />
           <Route path="/formularioPostagem/:id" element={<CadastroPostagem />} />
           <Route path="/formulariopostagens" element={<CadastroPostagem />} />
+          <Route path="/deletarPostagem/:id" element={<DeletarPostagem />} />
+           <Route path="/deletarTema/:id" element={<DeletarTema />} />
         </Routes>
         <Footer />
       </BrowserRouter>
