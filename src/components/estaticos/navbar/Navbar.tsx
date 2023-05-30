@@ -6,9 +6,9 @@ import './Navbar.css'
 
 const AppNavbar: React.FC = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" style={{ backgroundColor: '#219EBC' }} variant="dark">
+    <Navbar collapseOnSelect expand="lg" style={{ backgroundColor: '#044b4c' }} variant="dark">
       <Link to="/home" className="navbar-brand">
-        <img src={'https://i.imgur.com/JWMUQKu.png'} alt="Logo" width="70" height="45" /> {/* Imagem da logo */}
+        <img src={'https://i.imgur.com/JWMUQKu.png'} alt="Logo" width="100" height="55" /> {/* Imagem da logo */}
       </Link>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
