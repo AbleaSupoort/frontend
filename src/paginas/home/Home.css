@@ -1,19 +1,18 @@
 .bemVindo{
-    background-image: url(https://i.imgur.com/do9e8PJ.png);
+    
+    background: linear-gradient(transparent 50%, #006266  90%), url(https://i.imgur.com/do9e8PJ.png);
     background-repeat: no-repeat;
     width: 80vh;
     min-height: 100vh;
     background-size: cover;
     background-position: center;
-    transform: translate3d(0px, 0px, 0px);
-    background-attachment:scroll;
 }
 .bemVindo2{
-    background-image: linear-gradient(to bottom, #006266 30% , #52acad )
+    background-image: linear-gradient(to bottom, #006266 30% , #52acad );
 }
 .bemVindo3{
     background-image: linear-gradient(to bottom, #52acad 30% , #006266 )
 }
 .bemVindo4{
-    background-image: linear-gradient(to bottom, #006266 80% , #032b2c )
+    background-image: linear-gradient(to bottom, #006266 30% , #032b2c )
 }
