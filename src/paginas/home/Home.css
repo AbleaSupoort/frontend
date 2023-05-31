@@ -14,5 +14,25 @@
     background-image: linear-gradient(to bottom, #52acad 30% , #006266 )
 }
 .bemVindo4{
-    background-image: linear-gradient(to bottom, #006266 30% , #032b2c )
+    background-image: linear-gradient(to bottom, #006266 30% , #032b2c );
 }
+
+.nome{
+    font-weight: bold !important;
+    color: white;
+}
+.descricao-equipe{
+    color: white;
+}
+.foto-equipe{
+    border-radius: 50%;
+    width: 150px;
+    margin-top: 10px;
+
+}
+
+.foto-empresas{
+    width:200px;
+}
+
+

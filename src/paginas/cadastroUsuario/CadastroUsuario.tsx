@@ -63,9 +63,9 @@ function CadastroUsuario() {
         }
     }
     return (
-        <Grid container direction='row' justifyContent='center' alignItems='center'>
+        <Grid className='telaCadastro' container direction='row' justifyContent='center' alignItems='center'>
             <Grid item xs={6} className='imagem2'></Grid>
-            <Grid item xs={6} alignItems='center'>
+            <Grid className='formCadastro' item xs={5} alignItems='center'>
                 <Box paddingX={10}>
                     <form onSubmit={onSubmit}>
                         <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos2'>Cadastrar</Typography>
@@ -76,11 +76,11 @@ function CadastroUsuario() {
                         <TextField value={confirmarSenha} onChange={(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)}id='confirmarSenha' label='confirmarSenha' variant='outlined' name='confirmarSenha' margin='normal' type='password' fullWidth />
                         <Box marginTop={2} textAlign='center'>
                             <Link to='/login' className='text-decorator-none'>
-                                <Button variant='contained' style={{background:"#F7A63B"}} className='btnCancelar'>
+                                <Button variant='contained' style={{background:"#F7A63B", fontWeight:"bold", color:"white"}} className='btnCancelar'>
                                     Cancelar
                                 </Button>
                             </Link>
-                            <Button type='submit' variant='contained' style={{background:'#219EBC'}}>
+                            <Button type='submit' variant='contained' style={{background:'#044b4c', fontWeight:"bold", color:"white"}}>
                                     Cadastrar
                             </Button>
                         </Box>

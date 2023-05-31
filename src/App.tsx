@@ -9,7 +9,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Contatos from './paginas/contatos/Contatos';
 import Login from './paginas/login/Login';
 import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
-import CadastroPostagem from './components/postagens/CadastroPostagem/CadastroPostagem';
+import CadastroPostagem from './components/postagens/cadastroPostagem/CadastroPostagem';
 import ListaPostagem from './components/postagens/listaPostagem/ListaPostagem';
 import store from './store/Store';
 import { ToastContainer } from 'react-toastify';
@@ -26,6 +26,7 @@ function App() {
       <ToastContainer />
       <BrowserRouter>
         <Navbar />
+        <div style={{ minHeight: '100vh' }}>
         <Routes >
           <Route path="/" element={<Login />} />
           <Route path="/home" element={<Home />} />
@@ -41,6 +42,8 @@ function App() {
           <Route path="/deletarPostagem/:id" element={<DeletarPostagem />} />
            <Route path="/deletarTema/:id" element={<DeletarTema />} />
         </Routes>
+        </div>
+        
         <Footer />
       </BrowserRouter>
       </Provider>

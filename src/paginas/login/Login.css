@@ -14,3 +14,14 @@
  .text-decorator-none{
      text-decoration: none;
  }
+
+ .telaLogin{
+    background-color:  rgb(233, 214, 214);
+ }
+
+ .formLogin{
+    background-color: #f3b86c;
+    height: 80vh;
+    border-radius: 10%;
+    box-shadow: 0px 10px 40px #00000056;
+}

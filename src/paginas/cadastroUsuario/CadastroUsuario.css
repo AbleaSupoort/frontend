@@ -14,3 +14,14 @@
 .btnCancelar{
     margin-right: 20px !important;
 }
+
+.telaCadastro{
+    background-color:  rgb(233, 214, 214);
+}
+
+.formCadastro{
+    background-color: #f3b86c;
+    height: 95vh;
+    border-radius: 10%;
+    box-shadow: 0px 10px 40px #00000056;
+}
