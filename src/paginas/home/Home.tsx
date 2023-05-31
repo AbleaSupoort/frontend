@@ -1,8 +1,36 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Button, Box, Paper, Grid, Typography } from '@material-ui/core';
 import "./Home.css";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { UserState } from '../../store/token/Reducer';
+import { toast } from 'react-toastify';
+
 function Home() {
+
+    let navigate = useNavigate();
+    // const [token, setToken] = useLocalStorage('token');
+
+    const token = useSelector<UserState, UserState["tokens"]>(
+        (state) => state.tokens
+    )
+    useEffect(() => {
+        if (token == "") {
+            // alert("Você precisa estar logado")
+            toast.error('Você precisa estar logado',{
+                position:"top-right",
+                autoClose:2000,
+                hideProgressBar:false,
+                closeOnClick:true,
+                pauseOnHover:true,
+                draggable:false,
+                theme:"colored",
+                progress:undefined
+            })
+            navigate("/login")
+
+        }
+    }, [token])
     return (
         <>
          <Grid container direction="row" justifyContent="center" alignItems="center" className='bemVindo'>

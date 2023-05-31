@@ -1,12 +1,41 @@
 import React from 'react';
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Navbar.css'
+import { useDispatch, useSelector } from 'react-redux';
+import { toast } from 'react-toastify';
+import { addToken } from '../../../store/token/Actions';
+import { UserState } from '../../../store/token/Reducer';
 
 const AppNavbar: React.FC = () => {
-  return (
-    <Navbar collapseOnSelect expand="lg" style={{ backgroundColor: '#044b4c' }} variant="dark">
+  const dispatch = useDispatch();
+    const token = useSelector<UserState, UserState["tokens"]>(
+        (state) => state.tokens
+    )
+    let navigate = useNavigate();
+
+    function goLogout() {
+        dispatch(addToken(''))
+        // alert("Usuário deslogado")
+        toast.info('Usuario deslogado', {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: false,
+            theme: "colored",
+            progress: undefined
+        })
+        navigate('/login')
+    }
+
+    var navbarComponent;
+    if (token !== ''){
+      navbarComponent =
+
+      <Navbar collapseOnSelect expand="lg" style={{ backgroundColor: '#044b4c' }} variant="dark">
       <Link to="/home" className="navbar-brand">
         <img src={'https://i.imgur.com/JWMUQKu.png'} alt="Logo" width="100" height="55" /> {/* Imagem da logo */}
       </Link>
@@ -27,11 +56,19 @@ const AppNavbar: React.FC = () => {
             <NavDropdown.Item as={Link} to="/action1">Perfil</NavDropdown.Item>
             <NavDropdown.Item as={Link} to="/action2">Configurações</NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item as={Link} to="/separated-link">Logout</NavDropdown.Item>
+            <NavDropdown.Item onClick={goLogout} >Logout</NavDropdown.Item>
           </NavDropdown>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
+
+    }
+  
+  return (
+    <>
+    {navbarComponent}
+    </>
+   
   );
 };
 
