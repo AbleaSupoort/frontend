@@ -71,7 +71,7 @@ function Home() {
             </Grid>
 
             <Grid container direction="row" justifyContent="center" alignItems="center" className='bemVindo2' style={{ height: 320 }}>
-                <Grid alignItems="center" item xs={8}>
+                <Grid  id='teste'alignItems="center" item xs={6}>
                     
                     <Box paddingX={20} >
                         <Typography variant="h5" component="h5" align="center" style={{ color: "white", fontWeight: "bold", textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)" , marginBottom:"20px"}}> Essa visão entende que cada aluno tem suas particularidades e que elas devem ser consideradas como diversidade e não como problema. <br></br> E o que o Able faz para ajudar a te informar? </Typography>
@@ -80,7 +80,7 @@ function Home() {
                         <Button variant="outlined" className='buttonPost' style={{ backgroundColor: "#faa046", color: "white", textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)" }}>Saiba Mais</Button>
                     </Link>
                 </Grid>
-                <Grid item xs={4} >
+                <Grid id='teste1' item xs={6} >
                     <img src='https://i.imgur.com/JWMUQKu.png' alt="logo" width="450px" height="300px" />
                 </Grid>
                 <Grid xs={12} style={{ backgroundColor: "white" }}>

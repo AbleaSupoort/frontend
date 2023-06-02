@@ -35,4 +35,16 @@
     width:200px;
 }
 
-
+#teste1{
+padding-right: 100px;
+}
+#teste{
+    padding-left: 140px;
+    
+}
+@media (max-width: 1400px) {
+    #teste{
+        padding-left: 90px;
+        
+    }
+}
