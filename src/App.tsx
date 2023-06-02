@@ -17,6 +17,8 @@ import 'react-toastify/dist/ReactToastify.css'
 import { Provider } from 'react-redux';
 import DeletarPostagem from './components/postagens/deletarPostagem/DeletarPostagem';
 import DeletarTema from './components/temas/deletarTema/DeletarTema';
+import FloatingButton from './components/estaticos/FloatingButton/FloatingButton';
+import MycChatbot from './components/chatbot/Chatbot';
 
 
 function App() {
@@ -41,10 +43,12 @@ function App() {
           <Route path="/formulariopostagens" element={<CadastroPostagem />} />
           <Route path="/deletarPostagem/:id" element={<DeletarPostagem />} />
            <Route path="/deletarTema/:id" element={<DeletarTema />} />
+           <Route path='chat' element={<MycChatbot/>} />
         </Routes>
         </div>
         
         <Footer />
+        <FloatingButton />
       </BrowserRouter>
       </Provider>
     </>

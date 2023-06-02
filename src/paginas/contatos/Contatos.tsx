@@ -27,12 +27,50 @@ function Contatos() {
 
                 <Divider />
                 <div className='cards'>
-                    <CardContact />
-                    <CardContact />
-                    <CardContact />
-                    <CardContact />
-                    <CardContact />
-                    <CardContact />
+                    <CardContact
+                        imagem='https://i.imgur.com/lqb9Avx.jpg'
+                        nome='Amanda'
+                        pitch='
+                        Sempre fui fascinada com tecnologia e com a possibilidade de ajudar as pessoas através dela,
+                        Sou uma Desenvolvedora de Software Fullstack, orientada a resultados e comprometida em fornecer valor através de excelentes habilidades de comunicação e trabalho em equipe.
+                         Possuo conhecimentos em Java, MySQL, JavaScript, React, NodeJS, Git, e outras tecnologias relevantes.'
+                        linkedin='https://www.linkedin.com/in/amanda--costa/'
+                        github='https://github.com/amandaribeiro0'
+                   />
+                    <CardContact
+                        imagem=''
+                        nome='Brenda'
+                        pitch=''
+                        github='https://github.com/breramos'
+                    />
+                    <CardContact
+                        imagem=''
+                        nome='Carolina'
+                        pitch=''
+                        github='https://github.com/CarolFAraujo'
+                        linkedin=''
+                    />
+                    <CardContact 
+                        imagem=''
+                        nome='Jamile'
+                        pitch=''
+                        github='https://github.com/fariasjamile'
+                        linkedin=''
+                    />
+                    <CardContact
+                        imagem=''
+                        nome='Lais'
+                        pitch=''
+                        github='https://github.com/laisfaustino'
+                        linkedin=''
+                    />
+                    <CardContact 
+                        imagem=''
+                        nome='Thiago'
+                        pitch=''
+                        github='https://github.com/Thiagoatl'
+                        linkedin=''
+                    />
                 </div>
             </ div>
         </Box>

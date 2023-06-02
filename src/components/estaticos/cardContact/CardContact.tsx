@@ -6,26 +6,33 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import './CardContact.css'
+import { Link } from 'react-router-dom';
 
-export default function CardContact() {
+export default function CardContact(props: any) {
   return (
-    <Card className='cardContact' variant="outlined" sx={{ maxWidth: 200 }}>
+    <Card className='cardContact' variant="outlined" sx={{ maxWidth: 220, minHeight:400 }}>
       <CardMedia
-        sx={{ height: 120 }} 
-        image="https://cdn-icons-png.flaticon.com/512/6073/6073873.png"
-        title="Integrante Abel"
+        sx={{ minHeight: 150 }} 
+        image={props.imagem}
+        title={props.nome}
       />
-      <CardContent>
-        <Typography  className='titleContact' gutterBottom variant="h5" component="div">
-          Pessoa 1
+      <CardContent  sx={{ minHeight: 250 }} >
+        <Typography  className='titleContact' gutterBottom variant="h4" component="h4">
+          {props.nome}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias aspernatur ad quia nisi id soluta totam omnis iure pariatur architecto, odit repudiandae dolore repellat quas odio suscipit qui quo praesentium?
+         {props.pitch}
         </Typography>
       </CardContent>
       <CardActions>
+        
+      <Link target='_blank' to={props.linkedin}>
         <Button size="small">LinkedIn</Button>
+        </Link>
+        <Link target='_blank' to={props.github}>
         <Button size="small">Github</Button>
+        </Link>
+        
       </CardActions>
     </Card>
   );
