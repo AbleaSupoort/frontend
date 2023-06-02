@@ -5,7 +5,7 @@ import {Button } from "@material-ui/core"
 import {Box} from '@mui/material';
 import './ModalPostagem.css';
 import CloseIcon from '@material-ui/icons/Close';
-import CadastroPostagem from '../CadastroPostagem/CadastroPostagem';
+import CadastroPostagem from '../cadastroPostagem/CadastroPostagem';
 
 function getModalStyle() {
   const top = 50 ;

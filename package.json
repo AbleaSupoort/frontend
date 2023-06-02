@@ -29,7 +29,6 @@
     "react-simple-chatbot": "^0.6.1",
     "react-toastify": "8.0.3",
     "react-use-localstorage": "3.5.3",
-    "styled-components": "^5.3.11",
     "swiper": "^9.3.2"
   },
   "devDependencies": {
