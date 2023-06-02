@@ -13,3 +13,7 @@ body::-webkit-scrollbar {
   }
   *{ margin : 0
 }
+
+body{
+  background-image: linear-gradient(to bottom, #006266 30% , #52acad );
+}

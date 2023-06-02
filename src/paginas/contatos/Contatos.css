@@ -19,7 +19,14 @@
     flex-direction: row;
 }
 
-.paragrafo{
+.historia{
+    display: flex;
+    text-align:start;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.proposito{
     display: flex;
     text-align:start;
     margin: 1rem;
