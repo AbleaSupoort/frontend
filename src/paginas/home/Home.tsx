@@ -89,26 +89,25 @@ function Home() {
 
             <Grid container direction="row-reverse" justifyContent="center" alignItems="center" className='bemVindo3' style={{ height: 300, textShadow: "2px 2px 4px rgba(255, 255, 255, 0.5)" }}>
                 <Grid alignItems="center" item xs={10} >
-                <Typography variant="h3" component="h3" align="center" style={{ color: "white", fontWeight: "bold", textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)" }} >Depoimentos</Typography>
+                <Typography variant="h3" component="h3" align="center" style={{ color: "white", fontWeight: "bold", textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)", marginTop:"50px" }} >Depoimentos</Typography>
                     <Box display='flex' padding={5}>
                    
                         <Box className='flex-equipe' marginRight={10}>
-                            <Typography variant='body1' align='center' className='nome'>Aluno 1</Typography>
+                            <Typography variant='body1' align='center' className='nome'>Pedro</Typography>
                             <img src={'https://i.imgur.com/j2woJnN.png'} alt="" className='foto-equipe' />
-                            <Typography variant='subtitle2' align='center' className='descricao-equipe paddingTop5'>Aluno | Aluno</Typography>
-                            <Typography variant='subtitle2' align='center' className='descricao-equipe'>Aluno | Aluno</Typography>
+                         
+                            <Typography variant='subtitle2' align='center' className='descricao-equipe'>Aluno</Typography>
                             <Typography variant='body2' className='descricao-equipe paddingTop5 paddingY'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste similique omnis deleniti nobis numquam ut eaque, magnam, voluptatum, alias officiis quibusdam explicabo nostrum soluta optio. Accusamus eius omnis voluptas. Iusto!
+                            O Able é uma ótima iniciativa para promover um senso de pertencimento e diversidade nas escolas. Ele me permitiu interagir com colegas que têm habilidades e origens diferentes e, através dessa troca, conseguimos aprender muito uns com os outros. O Able também ajuda os professores a estarem mais conscientes das dinâmicas e das nossas necessidades sociais enquanto alunos, além de permitir que eles criem ambientes de aprendizagem mais inclusivos. Eu acredito que o Able pode fazer uma diferença positiva na vida de muitos estudantes e educadores, assim como fez na minha.
                             </Typography>
 
                         </Box>
                         <Box className='flex-equipe' marginLeft={10}>
-                            <Typography variant='body1' align='center' className='nome'>Aluno 2</Typography>
+                            <Typography variant='body1' align='center' className='nome'>ROBERTO</Typography>
                             <img src={'https://i.imgur.com/j2woJnN.png'} alt="" className='foto-equipe' />
-                            <Typography variant='subtitle2' align='center' className='descricao-equipe paddingTop5'>Aluno | Aluno</Typography>
-                            <Typography variant='subtitle2' align='center' className='descricao-equipe'>Aluno | Aluno</Typography>
+                            <Typography variant='subtitle2' align='center' className='descricao-equipe paddingTop5'>Professor</Typography>
                             <Typography variant='body2' className='descricao-equipe paddingTop5 paddingY'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quae, ea, nobis placeat ducimus veritatis perferendis ullam culpa nihil rem adipisci sint eaque quia consequatur excepturi ex doloribus nostrum dolores!
+                            Eu uso o Able na minha sala de aula e estou muito satisfeito com os resultados. O Able me ajuda a conhecer melhor os meus alunos e a planejar atividades que atendam às suas necessidades e interesses. O Able também facilita a comunicação e a colaboração entre os alunos, que se tornam mais solidários e respeitosos uns com os outros. O Able é uma ferramenta valiosa para a educação inclusiva e para o desenvolvimento social dos estudantes
                             </Typography>
 
                         </Box>
@@ -120,12 +119,11 @@ function Home() {
                 
             </Grid>
 
-            <Grid container direction="row" justifyContent="center" alignItems="center" className='bemVindo4' style={{ height: 380, backgroundColor: "#006266" }}>
-                            <Box marginTop={65}>
-                            </Box>
+            <Grid container direction="row" justifyContent="center" alignItems="center" className='bemVindo4' style={{ height: 550, backgroundColor: "#006266" }}>
+                            
                 <Grid alignItems="center" item xs={12}>
                     <Box paddingX={20} >
-                        <Typography variant="h3" component="h3" align="center" style={{ color: "white", fontWeight: "bold", textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)" }}>Empresas parceiras</Typography>
+                        <Typography variant="h3" component="h3" align="center" style={{ color: "white", fontWeight: "bold", textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)", marginTop:"300px" }}>Empresas parceiras</Typography>
                     </Box>
                     <Box display='flex'>
                         <img src={'https://i.imgur.com/ZQYANi9.png'} alt="" className='foto-empresas' />

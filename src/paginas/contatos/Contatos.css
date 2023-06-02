@@ -12,6 +12,14 @@
     
 }
 
+.p {
+    color: #fff !;
+    font-size: 0.8rem;
+    line-height: 150%;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+
 .cards{
     display: flex;
     gap: 1.5rem;

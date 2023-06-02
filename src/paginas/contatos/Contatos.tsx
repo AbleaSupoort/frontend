@@ -15,7 +15,7 @@ function Contatos() {
                         <Typography  variant="h2" component="h2" style={{ color: "white", fontWeight: "bold", textShadow: "2px 2px 4px rgba(0, 0, 0, 1)" , marginBottom:"20px"}}>NOSSA HISTÓRIA</Typography>
                     </Grid>
                     <Grid xs={8}> 
-                        <Typography variant='body2' style={{textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)"}}>
+                        <Typography className='p' variant='body2' style={{textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)"}}>
                         Able é uma plataforma de rede social focada em educação inclusiva, que tem como missão conectar pessoas com necessidades inclusivas a oportunidades de aprendizagem e desenvolvimento. Acreditamos que todos são capazes de aprender e ensinar, independentemente das suas limitações ou diferenças. Por isso, oferecemos uma plataforma intuitiva e acessível, que permite aos usuários interagir com conteúdos educacionais adaptados às suas necessidades, compartilhar experiências e conhecimentos, e fazer parte de uma comunidade engajada e solidária. Able é mais do que uma rede social, é um espaço de inclusão e transformação.
                         </Typography>
                     </Grid>
@@ -23,7 +23,7 @@ function Contatos() {
                 <Divider/>
                 <Grid className='proposito'>
                     <Grid xs={8}>
-                        <Typography variant='body2' style={{textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)"}} >O Able é uma ferramenta essencial para quem busca ampliar seus conhecimentos sobre inclusão social e escolar. Com informações técnicas embasadas no conhecimento científico e materiais práticos para auxiliar no dia a dia, o Able se torna uma referência para familiares, profissionais de pessoas com atraso nos marcadores do desenvolvimento e profissionais da Educação. Não perca a oportunidade de se atualizar e contribuir para uma educação mais inclusiva e acessível para todos. Vamos juntos nessa jornada!</Typography>
+                        <Typography className='p' variant='body2' style={{textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)"}} >O Able é uma ferramenta essencial para quem busca ampliar seus conhecimentos sobre inclusão social e escolar. Com informações técnicas embasadas no conhecimento científico e materiais práticos para auxiliar no dia a dia, o Able se torna uma referência para familiares, profissionais de pessoas com atraso nos marcadores do desenvolvimento e profissionais da Educação. Não perca a oportunidade de se atualizar e contribuir para uma educação mais inclusiva e acessível para todos. Vamos juntos nessa jornada!</Typography>
                     </Grid>
 
                     <Grid xs={3}>
