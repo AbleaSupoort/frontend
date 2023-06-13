@@ -17,3 +17,10 @@ body::-webkit-scrollbar {
 body{
   background-image: linear-gradient(to bottom, #006266 30% , #52acad );
 }
+@media(max-width: 700px){
+
+body{
+  width : 100%
+}
+
+}
