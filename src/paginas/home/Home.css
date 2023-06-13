@@ -9,6 +9,7 @@
 }
 .bemVindo2{
     background-image: linear-gradient(to bottom, #006266 30% , #52acad );
+    display: flex;
 }
 .bemVindo3{
     background-image: linear-gradient(to bottom, #52acad 30% , #006266 )
@@ -16,7 +17,9 @@
 .bemVindo4{
     background-image: linear-gradient(to bottom, #006266 30% , #032b2c );
 }
-
+.bemVindo5{
+    background-color: #52acad;
+}
 .nome{
     font-weight: bold !important;
     color: white;
@@ -48,3 +51,27 @@ padding-right: 100px;
         
     }
 }
+@media (max-width: 800px) {
+    .bemVindo2 {
+        flex-direction: column;
+    }
+    .TelaGrande {
+        margin-bottom: 20px;
+    }
+    .bemVindo3 {
+        flex-direction: column;
+    }
+    .bemVindo4{
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+    }
+    @media (min-width: 800px){
+        .descricao-equipe{
+            padding-left: 150px;
+            padding-right: 150px;
+        }
+
+    }
+
