@@ -1,4 +1,6 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import ChatBot from 'react-simple-chatbot';
 import { ThemeProvider } from 'styled-components';
 
@@ -46,7 +48,21 @@ function MycChatbot() {
       options: [
         { value: "oqAble", label: "O que é o Able?", trigger: "oqAble" },
         { value: "criadores", label: "Quem são os criadores do Able?", trigger: "criadores" },
+        { value:"postagens", label: "Quero ver as postagens do Able!", trigger:"postagens" },
       ]
+    },
+    {
+      id:"postagens",
+      component: (
+        <div>
+            <h6>Clique no botão abaixo</h6>
+           <Link to='/postagens'>
+             <Button variant="outlined" className='buttonPost' style={{ backgroundColor: "#faa046", color: "white", textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)" }}>Ver Postagens</Button>
+           </Link>
+        </div>
+       
+      ),
+      trigger: "newQuestion",
     },
     {
       id: "oqAble",
@@ -81,6 +97,7 @@ function MycChatbot() {
     },
 
   ];
+
   return (
     
     <ThemeProvider theme={theme}>
