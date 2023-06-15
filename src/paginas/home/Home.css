@@ -45,6 +45,20 @@ padding-right: 100px;
     padding-left: 140px;
     
 }
+
+#img-able{
+    animation: float 3s ease-out infinite alternate;
+}
+
+@keyframes float {
+   to{
+    transform: scale(1.2);
+   }
+   from{
+    transform: scale(0.9);
+   }
+}
+
 @media (max-width: 1400px) {
     #teste{
         padding-left: 90px;

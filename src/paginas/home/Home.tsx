@@ -82,7 +82,7 @@ function Home() {
     </Grid>
     <Grid item xs={12} md={6} style={{ display: "flex", justifyContent: "center" }}>
         <Box>
-            <img src='https://i.imgur.com/JWMUQKu.png' alt="logo" width="350px" height="250px" />
+            <img src='https://i.imgur.com/JWMUQKu.png' id='img-able' alt="logo" width="350px" height="250px" />
         </Box>
     </Grid>
 </Grid>

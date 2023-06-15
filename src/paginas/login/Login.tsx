@@ -43,13 +43,6 @@ function Login() {
     }
 
     // useEffect(() => {
-    //     if (token !== '') {
-    //         console.log("Token:", token)
-
-    //         dispatch(addToken(token))
-    //         navigate('/home')
-    //     }
-    // }, [token])
 
     useEffect(() => {
         if (respUserLogin.token !== "") {
@@ -97,12 +90,12 @@ function Login() {
 
     return (
         <Grid className='telaLogin' container direction='row' justifyContent='center' alignItems='center'>
-            <Grid className='formLogin' alignItems='center' xs={5}>
-                <Box padding={12} >
+            <Grid  alignItems='center' xs={5}>
+                <Box className='formLogin'>
                     <form onSubmit={onSubmit}>
                         <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos1'>Entrar</Typography>
-                        <TextField value={userLogin.usuario} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='usuário' variant='outlined' name='usuario' margin='normal' fullWidth />
-                        <TextField value={userLogin.senha} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='senha' variant='outlined' name='senha' margin='normal' type='password'fullWidth />
+                        <TextField value={userLogin.usuario} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='Usuário' variant='outlined' name='usuario' margin='normal' fullWidth />
+                        <TextField value={userLogin.senha} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='Senha' variant='outlined' name='senha' margin='normal' type='password'fullWidth />
                         <Box marginTop={2} textAlign='center'>
                                 <Button type='submit' variant='contained' style={{background:"#044b4c", fontWeight:"bold", color:"white", }}>
                                     Logar

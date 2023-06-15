@@ -20,8 +20,57 @@
 }
 
 .formCadastro{
+    display:grid;
+    padding: 1rem;
+     place-items: center;
     background-color: #f3b86c;
-    height: 95vh;
+    height: 80vh;
     border-radius: 10%;
     box-shadow: 0px 10px 40px #00000056;
+}
+
+
+@media (max-width: 390px) {
+    .imagem2{
+        display: none;
+        
+    }
+    .telaCadastro{
+        width:100vw;
+        height: 100vh;
+    }
+    .formCadastro{
+        
+        display:grid;
+         place-items: center;
+        height: 85vh;
+        width: 90vw;
+        margin-left: -55% ;
+    
+    }
+   
+
+}
+
+@media (max-width: 780px) {
+    .imagem2{
+        display: none;
+        
+    }
+    .telaCadastro{
+        width:100vw;
+        height: 120vh;
+    }
+
+    .formCadastro{
+        
+        display:grid;
+         place-items: center;
+        height: 110vh;
+        width: 90vw;
+        margin-left: -55% ;
+    
+    
+    }
+    
 }

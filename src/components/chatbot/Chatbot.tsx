@@ -8,7 +8,6 @@ function MycChatbot() {
 
   const theme = {
     background: '#f5f8fb',
-    fontFamily: 'Helvetica Neue',
     headerBgColor: '#fea03b',
     headerFontColor: '#fff',
     headerFontSize: '15px',
@@ -16,7 +15,7 @@ function MycChatbot() {
     botFontColor: '#fff',
     userBubbleColor: '#044b4c',
     userFontColor: 'white',
-    alignItems:"center"
+    alignItems: "flex-end"
   };
 
   const steps = [
@@ -48,19 +47,19 @@ function MycChatbot() {
       options: [
         { value: "oqAble", label: "O que é o Able?", trigger: "oqAble" },
         { value: "criadores", label: "Quem são os criadores do Able?", trigger: "criadores" },
-        { value:"postagens", label: "Quero ver as postagens do Able!", trigger:"postagens" },
+        { value: "postagens", label: "Quero ver as postagens do Able!", trigger: "postagens" },
       ]
     },
     {
-      id:"postagens",
+      id: "postagens",
       component: (
         <div>
-            <h6>Clique no botão abaixo</h6>
-           <Link to='/postagens'>
-             <Button variant="outlined" className='buttonPost' style={{ backgroundColor: "#faa046", color: "white", textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)" }}>Ver Postagens</Button>
-           </Link>
+          <h6>Clique no botão abaixo</h6>
+          <Link to='/postagens'>
+            <Button variant="outlined" className='buttonPost' style={{ backgroundColor: "#faa046", color: "white", textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)" }}>Ver Postagens</Button>
+          </Link>
         </div>
-       
+
       ),
       trigger: "newQuestion",
     },
@@ -92,17 +91,19 @@ function MycChatbot() {
     },
     {
       id: 'end-message',
-      message: 'Obrigada!Para mais informações entre em contato:projetointe gradorgp6@gmail.com ❤',
+      message: 'Obrigada!Para mais informações entre em contato:projetointegradorgp6@gmail.com ❤',
       end: true,
     },
 
   ];
 
   return (
-    
-    <ThemeProvider theme={theme}>
-    <ChatBot steps={steps} />
-  </ThemeProvider>
+    <div id='bot'>
+      <ThemeProvider theme={theme}>
+        <ChatBot steps={steps} />
+      </ThemeProvider>
+    </div>
+
   )
 }
 

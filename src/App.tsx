@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import Navbar from './components/estaticos/navbar/Navbar';
 import Footer from './components/estaticos/footer/Footer';
 import Home from './paginas/home/Home';
 import CadastroTema from './components/temas/cadastroTema/CadastroTema';
 import ListaTema from './components/temas/listaTema/ListaTema';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import Contatos from './paginas/contatos/Contatos';
 import Login from './paginas/login/Login';
 import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
@@ -21,14 +21,23 @@ import FloatingButton from './components/estaticos/FloatingButton/FloatingButton
 import MycChatbot from './components/chatbot/Chatbot';
 
 
+function ScrollToTop(){
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, [pathname]);
+  return null;
+}
+
 function App() {
   return ( 
     <>
     <Provider store={store}>
       <ToastContainer />
       <BrowserRouter>
+      <ScrollToTop/>
         <Navbar />
-        <div style={{ minHeight: '100vh' }}>
+        <div style={{ minHeight: '80vh', }}>
         <Routes >
           <Route path="/" element={<Login />} />
           <Route path="/home" element={<Home />} />
