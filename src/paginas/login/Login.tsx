@@ -39,17 +39,14 @@ function Login() {
             ...userLogin,
             [e.target.name]: e.target.value
         })
-        console.log(Object.values(userLogin))
     }
 
-    // useEffect(() => {
+
 
     useEffect(() => {
         if (respUserLogin.token !== "") {
 
-            // Verifica os dados pelo console (Opcional)
-            console.log("Token: " + respUserLogin.token)
-            console.log("ID: " + respUserLogin.id)
+
 
             // Guarda as informações dentro do Redux (Store)
             dispatch(addToken(respUserLogin.token))
