@@ -27,16 +27,16 @@ function Footer() {
                             </Box>
                             <Box>
                                 <a href="https://www.instagram.com/generationbrasil/" target="_blank">
-                                    <InstagramIcon style={{ fontSize: 40, color: "white" }} />
+                                    <InstagramIcon style={{ fontSize: 40, color: "#faa046"}} />
                                 </a>
                                 <a href="https://www.linkedin.com/school/generationbrasil/" target="_blank">
-                                    <LinkedInIcon style={{ fontSize: 40, color: "white" }} />
+                                    <LinkedInIcon style={{ fontSize: 40, color: "#faa046" }} />
                                 </a>
                                 <a href="https://github.com/AbleaSupoort" target="_blank">
-                                    <GitHubIcon style={{ fontSize: 40, color: "white" }} />
+                                    <GitHubIcon style={{ fontSize: 40, color: "#faa046" }} />
                                 </a>
                                 <a href="https://www.facebook.com/generationbrasil" target="_blank">
-                                    <FacebookIcon style={{ fontSize: 40, color: "white" }} />
+                                    <FacebookIcon style={{ fontSize: 40, color: "#faa046" }} />
                                 </a>
                             </Box>
                         </Box>

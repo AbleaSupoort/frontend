@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import ChatBot from 'react-simple-chatbot';
+import './Chatbot.css'
 import { ThemeProvider } from 'styled-components';
 
 function MycChatbot() {
@@ -15,7 +16,8 @@ function MycChatbot() {
     botFontColor: '#fff',
     userBubbleColor: '#044b4c',
     userFontColor: 'white',
-    alignItems: "flex-end"
+    alignItems: "center",
+    fontFamily: 'Helvetica Neue',
   };
 
   const steps = [
@@ -91,18 +93,27 @@ function MycChatbot() {
     },
     {
       id: 'end-message',
-      message: 'Obrigada!Para mais informações entre em contato:projetointegradorgp6@gmail.com ❤',
+      message: 'Obrigada!Para mais informações entre em contato:projetointegrador gp6@gmail.com ❤',
       end: true,
     },
 
   ];
 
+  
   return (
-    <div id='bot'>
+    
       <ThemeProvider theme={theme}>
-        <ChatBot steps={steps} />
+        <ChatBot  steps={steps}  
+        botAvatar='https://i.imgur.com/ySHKsTp.png' 
+        headerTitle='Lorena'
+        width='350px'
+        recognitionLang='pt'
+        className='chat'
+        botDelay='700'
+        placeholder='Escreva aqui...'
+        />
       </ThemeProvider>
-    </div>
+  
 
   )
 }
