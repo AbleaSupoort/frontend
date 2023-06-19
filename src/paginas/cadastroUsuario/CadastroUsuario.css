@@ -40,7 +40,6 @@
         height: 100vh;
     }
     .formCadastro{
-        
         display:grid;
          place-items: center;
         height: 85vh;
@@ -66,7 +65,7 @@
         
         display:grid;
          place-items: center;
-        height: 1vh;
+        height: 100vh;
         width: 90vw;
         margin-left: -55% ;
     
