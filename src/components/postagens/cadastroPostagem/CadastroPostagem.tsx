@@ -178,6 +178,8 @@ function CadastroPostagem() {
         navigate('/postagens')
     }
 
+    //
+
     return (
         <Container maxWidth="sm" className="cadastroPostagem">
             <form onSubmit={onSubmit}>
