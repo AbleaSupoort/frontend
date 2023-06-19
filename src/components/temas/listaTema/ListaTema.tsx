@@ -9,6 +9,8 @@ import { busca } from '../../../services/Service';
 import { useSelector } from 'react-redux';
 import { UserState } from '../../../store/token/Reducer';
 import { toast } from 'react-toastify';
+import DeleteIcon from '@mui/icons-material/Delete';
+import EditIcon from '@mui/icons-material/Edit';
 
 function ListaTema() {
     const [temas, setTemas] = useState<Tema[]>([]);
@@ -57,6 +59,7 @@ function ListaTema() {
                             <Typography color="textSecondary" gutterBottom>
                                 Tema
                             </Typography>
+                           
                             <Typography variant="h5" component="h2">
                                {tema.descricao}
                             </Typography>
@@ -66,16 +69,16 @@ function ListaTema() {
 
                                 <Link to={`/formularioTema/${tema.id}`} className="text-decorator-none">
                                     <Box mx={1}>
-                                        <Button variant="contained" className="marginLeft" size='small' color="primary" style={{background:'#044b4c', fontWeight:"bold", color:"white"}} >
-                                            ATUALIZAR
-                                        </Button>
+                                    <Button variant="contained" className="marginLeft" size='small' color="primary" style={{background:'#044b4c', fontWeight:"bold", color:"white"}} >
+                        <EditIcon />
+                      </Button>
                                     </Box>
                                 </Link>
                                 <Link to={`/deletarTema/${tema.id}`} className="text-decorator-none">
                                     <Box mx={1}>
-                                        <Button variant="contained" size='small' color="secondary"  style={{background:"#F7A63B", fontWeight:"bold", color:"white"}}>
-                                            DELETAR
-                                        </Button>
+                                    <Button variant="contained" size='small' color="secondary" style={{background:"#F7A63B", fontWeight:"bold", color:"white"}} >
+                        <DeleteIcon/>
+                      </Button>
                                     </Box>
                                 </Link>
                             </Box>

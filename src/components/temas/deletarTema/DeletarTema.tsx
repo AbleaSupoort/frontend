@@ -9,7 +9,8 @@ import Tema from '../../../models/Tema';
 import { useSelector } from 'react-redux';
 import { UserState } from '../../../store/token/Reducer';
 import { toast } from 'react-toastify';
-
+import DoneIcon from '@mui/icons-material/Done';
+import ClearIcon from '@mui/icons-material/Clear';
 
 function DeletarTema() {
     let navigate = useNavigate();
@@ -78,25 +79,28 @@ function DeletarTema() {
         <Card variant="outlined">
           <CardContent>
             <Box justifyContent="center">
-              <Typography color="textSecondary" gutterBottom>
-                Deseja deletar o Tema:
+              <Typography gutterBottom>
+                Deseja deletar o tema:
               </Typography>
               <Typography color="textSecondary">
                 {tema?.descricao}
+              </Typography>
+              <Typography color="textSecondary">
+                {tema?.titulo}
               </Typography>
             </Box>
           </CardContent>
           <CardActions>
             <Box display="flex" justifyContent="start" ml={1.0} mb={2} >
               <Box mx={2}>
-                <Button onClick={sim} variant="contained" className="marginLeft" size='large' color="primary">
-                  Sim
-                </Button>
+              <Button onClick={sim} variant="contained" className="marginLeft" size='large' color="primary" style={{background:'#044b4c', fontWeight:"bold", color:"white"}}>
+                <DoneIcon/>
+              </Button>
               </Box>
               <Box mx={2}>
-                <Button  onClick={nao} variant="contained" size='large' color="secondary">
-                  Não
-                </Button>
+              <Button  onClick={nao} variant="contained" size='large' color="secondary" style={{background:"#F7A63B", fontWeight:"bold", color:"white"}}>
+                <ClearIcon/>
+              </Button>
               </Box>
             </Box>
           </CardActions>

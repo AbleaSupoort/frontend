@@ -8,6 +8,8 @@ import { busca } from '../../../services/Service';
 import { UserState } from '../../../store/token/Reducer';
 import './ListaPostagem.css';
 import { toast } from 'react-toastify';
+import DeleteIcon from '@mui/icons-material/Delete';
+import EditIcon from '@mui/icons-material/Edit';
 
 function ListaPostagem() {
   const [posts, setPosts] = useState<Postagem[]>([])
@@ -67,10 +69,7 @@ function ListaPostagem() {
                   {post.texto}
                 </Typography>
                 <Typography variant="body2" component="p">
-                  {post.tema?.descricao}
-                </Typography>
-                <Typography variant="body2" component="p">
-                  Postado por: {post.usuario?.nome}
+                  Tema: {post.tema?.descricao}
                 </Typography>
                 <Typography variant="body1" component="p">
                   Data: {Intl.DateTimeFormat('pt-BR', { dateStyle: 'short', timeStyle: 'medium' }).format(new Date(post.data))}
@@ -82,14 +81,14 @@ function ListaPostagem() {
                   <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
                     <Box mx={1}>
                       <Button variant="contained" className="marginLeft" size='small' color="primary" style={{background:'#044b4c', fontWeight:"bold", color:"white"}} >
-                        atualizar
+                        <EditIcon />
                       </Button>
                     </Box>
                   </Link>
                   <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
                     <Box mx={1}>
                       <Button variant="contained" size='small' color="secondary" style={{background:"#F7A63B", fontWeight:"bold", color:"white"}} >
-                        deletar
+                        <DeleteIcon/>
                       </Button>
                     </Box>
                   </Link>

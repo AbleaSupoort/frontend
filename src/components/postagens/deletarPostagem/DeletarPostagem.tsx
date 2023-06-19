@@ -9,6 +9,8 @@ import { buscaId, deleteId } from '../../../services/Service';
 import { useSelector } from 'react-redux';
 import { UserState } from '../../../store/token/Reducer';
 import { toast } from 'react-toastify';
+import DoneIcon from '@mui/icons-material/Done';
+import ClearIcon from '@mui/icons-material/Clear';
 
 function DeletarPostagem() {
     let navigate = useNavigate();
@@ -76,11 +78,14 @@ function DeletarPostagem() {
         <Card variant="outlined" >
           <CardContent>
             <Box justifyContent="center">
-              <Typography color="textSecondary" gutterBottom>
-                Deseja deletar a Postagem:
+              <Typography gutterBottom>
+                Deseja deletar:
               </Typography>
               <Typography color="textSecondary" >
               {post?.titulo}
+              </Typography>
+              <Typography color="textSecondary" >
+              {post?.texto}
               </Typography>
             </Box>
 
@@ -88,13 +93,13 @@ function DeletarPostagem() {
           <CardActions>
             <Box display="flex" justifyContent="start" ml={1.0} mb={2} >
               <Box mx={2}>
-              <Button onClick={sim} variant="contained" className="marginLeft" size='large' color="primary">
-                Sim
+              <Button onClick={sim} variant="contained" className="marginLeft" size='large' color="primary" style={{background:'#044b4c', fontWeight:"bold", color:"white"}}>
+                <DoneIcon/>
               </Button>
               </Box>
               <Box>
-              <Button  onClick={nao} variant="contained" size='large' color="secondary">
-                Não
+              <Button  onClick={nao} variant="contained" size='large' color="secondary" style={{background:"#F7A63B", fontWeight:"bold", color:"white"}}>
+                <ClearIcon/>
               </Button>
               </Box>
             </Box>

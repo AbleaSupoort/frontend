@@ -53,8 +53,7 @@ const AppNavbar: React.FC = () => {
 
 
           <NavDropdown title="Social" id="collasible-nav-dropdown" style={{ color: 'white' }}>
-            <NavDropdown.Item as={Link} to="/action1">Perfil</NavDropdown.Item>
-            <NavDropdown.Item as={Link} to="/action2">Configurações</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/perfil">Perfil</NavDropdown.Item>
             <NavDropdown.Divider />
             <NavDropdown.Item onClick={goLogout} >Logout</NavDropdown.Item>
           </NavDropdown>

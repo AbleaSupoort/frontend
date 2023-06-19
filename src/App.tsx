@@ -19,6 +19,7 @@ import DeletarPostagem from './components/postagens/deletarPostagem/DeletarPosta
 import DeletarTema from './components/temas/deletarTema/DeletarTema';
 import FloatingButton from './components/estaticos/FloatingButton/FloatingButton';
 import MycChatbot from './components/chatbot/Chatbot';
+import Perfil from './paginas/perfil/Perfil';
 
 
 function ScrollToTop(){
@@ -53,6 +54,7 @@ function App() {
           <Route path="/deletarPostagem/:id" element={<DeletarPostagem />} />
            <Route path="/deletarTema/:id" element={<DeletarTema />} />
            <Route path='chat' element={<MycChatbot/>} />
+           <Route path='perfil' element={<Perfil/>} />
         </Routes>
         </div>
         
