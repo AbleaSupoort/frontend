@@ -72,6 +72,9 @@ define(['./workbox-5357ef54'], (function (workbox) { 'use strict';
   self.skipWaiting();
   workbox.clientsClaim();
 
+  self.addEventListener('fetch', evt =>{
+  });
+
   /**
    * The precacheAndRoute() method efficiently caches and responds to
    * requests for URLs in the manifest.
